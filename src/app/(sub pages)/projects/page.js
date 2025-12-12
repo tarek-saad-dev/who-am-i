@@ -196,116 +196,23 @@ export default function ProjectsPage() {
         section >
 
         { /* Projects (Story-based) Section */ } <
-        section className = "mb-24 lg:mb-32" >
+        section className = "mb-24 lg:mb-32 scroll-smooth"
+        id = "projects" >
         <
-        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-12 text-center" >
-        Projects <
-        /h2> <
-        div className = "space-y-24 lg:space-y-32" > { /* Project Story 1 */ } <
-        div className = "max-w-4xl mx-auto" >
-        <
-        div className = "custom-bg rounded-lg p-8 lg:p-12" >
-        <
-        h3 className = "text-2xl sm:text-3xl font-bold text-accent mb-4" >
-        Project Title 1 <
-        /h3> <
-        div className = "mb-6" >
-        <
-        p className = "text-foreground/60 text-sm mb-2" >
-        The Challenge <
-        /p> <
-        p className = "text-foreground leading-relaxed mb-6" > [Challenge description placeholder - What problem needed to
-            be solved ?
-        ] <
-        /p> < /
-        div > <
-        div className = "mb-6" >
-        <
-        p className = "text-foreground/60 text-sm mb-2" >
-        The Approach <
-        /p> <
-        p className = "text-foreground leading-relaxed mb-6" > [Approach description placeholder - How did you think
-            through the solution ?
-        ] <
-        /p> < /
-        div > <
-        div className = "mb-6" >
-        <
-        p className = "text-foreground/60 text-sm mb-2" >
-        The Solution <
-        /p> <
-        p className = "text-foreground leading-relaxed mb-6" > [Solution description placeholder - What was the final
-            design and why ?
-        ] <
-        /p> < /
-        div > <
-        div >
-        <
-        p className = "text-foreground/60 text-sm mb-2" >
-        The Impact <
-        /p> <
-        p className = "text-foreground leading-relaxed" > [Impact description placeholder - What value did this
-            create ?
-        ] <
-        /p> < /
-        div > { /* Image placeholder */ } <
-        div className = "mt-8 w-full h-64 bg-foreground/10 rounded-lg flex items-center justify-center" >
-        <
-        p className = "text-foreground/40" > [Project Image Placeholder] <
-        /p> < /
-        div > <
-        /div> < /
-        div >
+        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-20 lg:mb-24 text-center" > { projects.title } <
+        /h2>
 
-        { /* Project Story 2 */ } <
-        div className = "max-w-4xl mx-auto" >
         <
-        div className = "custom-bg rounded-lg p-8 lg:p-12" >
-        <
-        h3 className = "text-2xl sm:text-3xl font-bold text-accent mb-4" >
-        Project Title 2 <
-        /h3> <
-        div className = "mb-6" >
-        <
-        p className = "text-foreground/60 text-sm mb-2" >
-        The Challenge <
-        /p> <
-        p className = "text-foreground leading-relaxed mb-6" > [Challenge description placeholder] <
-        /p> < /
-        div > <
-        div className = "mb-6" >
-        <
-        p className = "text-foreground/60 text-sm mb-2" >
-        The Approach <
-        /p> <
-        p className = "text-foreground leading-relaxed mb-6" > [Approach description placeholder] <
-        /p> < /
-        div > <
-        div className = "mb-6" >
-        <
-        p className = "text-foreground/60 text-sm mb-2" >
-        The Solution <
-        /p> <
-        p className = "text-foreground leading-relaxed mb-6" > [Solution description placeholder] <
-        /p> < /
-        div > <
-        div >
-        <
-        p className = "text-foreground/60 text-sm mb-2" >
-        The Impact <
-        /p> <
-        p className = "text-foreground leading-relaxed" > [Impact description placeholder] <
-        /p> < /
-        div > { /* Image placeholder */ } <
-        div className = "mt-8 w-full h-64 bg-foreground/10 rounded-lg flex items-center justify-center" >
-        <
-        p className = "text-foreground/40" > [Project Image Placeholder] <
-        /p> < /
-        div > <
-        /div> < /
-        div > <
-        /div> < /
-        section >
+        div className = "space-y-32 lg:space-y-40" > {
+            projects.items && projects.items.map((project, index) => ( <
+                ProjectStory key = { `project-${index}` }
+                project = { project }
+                index = { index }
+                />
+            ))
+        } <
+        /div> <
+        /section>
 
         { /* Design Types Section */ } <
         section className = "mb-24 lg:mb-32" >
