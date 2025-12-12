@@ -274,7 +274,7 @@ export default function ProjectsPage() {
         div className = "custom-bg rounded-lg p-12 lg:p-16" >
         <
         h2 className = "text-2xl sm:text-3xl lg:text-4xl font-bold text-accent mb-6" >
-        Let 's Create Something Meaningful Together <
+        Let & apos; s Create Something Meaningful Together <
         /h2> <
         p className = "text-foreground text-lg mb-8 leading-relaxed" > [CTA description placeholder - Invite conversation about potential projects] <
         /p> <
