@@ -29,8 +29,8 @@ export default function ProjectsPage() {
         <
         Staff / >
         <
-        /RenderModel> <
-        /div>
+        /RenderModel> < /
+        div >
 
         { /* Main Content Container */ } <
         div className = "relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24" >
@@ -45,12 +45,12 @@ export default function ProjectsPage() {
         /h1> <
         p className = "font-light text-foreground/80 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed" >
         Every project starts with understanding the challenge, not the aesthetic. <
-        /p> <
-        /div>
+        /p> < /
+        div >
 
         { /* Clean Visual Space - Subtle decorative element */ } <
-        div className = "absolute bottom-20 left-1/2 -translate-x-1/2 w-px h-32 bg-gradient-to-b from-accent/30 to-transparent hidden lg:block" > < /div> <
-        /section>
+        div className = "absolute bottom-20 left-1/2 -translate-x-1/2 w-px h-32 bg-gradient-to-b from-accent/30 to-transparent hidden lg:block" > < /div> < /
+        section >
 
         { /* How I Think (Process) Section */ } <
         section className = "mb-24 lg:mb-32" >
@@ -67,20 +67,20 @@ export default function ProjectsPage() {
         div className = "custom-bg rounded-lg p-6" >
         <
         h3 className = "text-xl font-semibold text-accent mb-3" > Step 1 < /h3> <
-        p className = "text-foreground/80" > [Process step placeholder] < /p> <
-        /div> <
+        p className = "text-foreground/80" > [Process step placeholder] < /p> < /
+        div > <
         div className = "custom-bg rounded-lg p-6" >
         <
         h3 className = "text-xl font-semibold text-accent mb-3" > Step 2 < /h3> <
-        p className = "text-foreground/80" > [Process step placeholder] < /p> <
-        /div> <
+        p className = "text-foreground/80" > [Process step placeholder] < /p> < /
+        div > <
         div className = "custom-bg rounded-lg p-6" >
         <
         h3 className = "text-xl font-semibold text-accent mb-3" > Step 3 < /h3> <
-        p className = "text-foreground/80" > [Process step placeholder] < /p> <
-        /div> <
-        /div> <
-        /div> <
+        p className = "text-foreground/80" > [Process step placeholder] < /p> < /
+        div > <
+        /div> < /
+        div > <
         /section>
 
         { /* Projects (Story-based) Section */ } <
@@ -101,32 +101,32 @@ export default function ProjectsPage() {
         <
         p className = "text-foreground/60 text-sm mb-2" > The Challenge < /p> <
         p className = "text-foreground leading-relaxed mb-6" > [Challenge description placeholder - What problem needed to be solved ? ] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "mb-6" >
         <
         p className = "text-foreground/60 text-sm mb-2" > The Approach < /p> <
         p className = "text-foreground leading-relaxed mb-6" > [Approach description placeholder - How did you think through the solution ? ] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "mb-6" >
         <
         p className = "text-foreground/60 text-sm mb-2" > The Solution < /p> <
         p className = "text-foreground leading-relaxed mb-6" > [Solution description placeholder - What was the final design and why ? ] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div >
         <
         p className = "text-foreground/60 text-sm mb-2" > The Impact < /p> <
         p className = "text-foreground leading-relaxed" > [Impact description placeholder - What value did this create ? ] <
-        /p> <
-        /div> { /* Image placeholder */ } <
+        /p> < /
+        div > { /* Image placeholder */ } <
         div className = "mt-8 w-full h-64 bg-foreground/10 rounded-lg flex items-center justify-center" >
         <
-        p className = "text-foreground/40" > [Project Image Placeholder] < /p> <
-        /div> <
-        /div> <
-        /div>
+        p className = "text-foreground/40" > [Project Image Placeholder] < /p> < /
+        div > <
+        /div> < /
+        div >
 
         { /* Project Story 2 */ } <
         div className = "max-w-4xl mx-auto" >
@@ -140,34 +140,34 @@ export default function ProjectsPage() {
         <
         p className = "text-foreground/60 text-sm mb-2" > The Challenge < /p> <
         p className = "text-foreground leading-relaxed mb-6" > [Challenge description placeholder] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "mb-6" >
         <
         p className = "text-foreground/60 text-sm mb-2" > The Approach < /p> <
         p className = "text-foreground leading-relaxed mb-6" > [Approach description placeholder] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "mb-6" >
         <
         p className = "text-foreground/60 text-sm mb-2" > The Solution < /p> <
         p className = "text-foreground leading-relaxed mb-6" > [Solution description placeholder] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div >
         <
         p className = "text-foreground/60 text-sm mb-2" > The Impact < /p> <
         p className = "text-foreground leading-relaxed" > [Impact description placeholder] <
-        /p> <
-        /div> { /* Image placeholder */ } <
+        /p> < /
+        div > { /* Image placeholder */ } <
         div className = "mt-8 w-full h-64 bg-foreground/10 rounded-lg flex items-center justify-center" >
         <
-        p className = "text-foreground/40" > [Project Image Placeholder] < /p> <
-        /div> <
-        /div> <
-        /div> <
-        /div> <
-        /section>
+        p className = "text-foreground/40" > [Project Image Placeholder] < /p> < /
+        div > <
+        /div> < /
+        div > <
+        /div> < /
+        section >
 
         { /* Design Types Section */ } <
         section className = "mb-24 lg:mb-32" >
@@ -183,50 +183,50 @@ export default function ProjectsPage() {
         p className = "text-foreground/80 text-sm leading-relaxed" > [Description placeholder
             for this design type
         ] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "custom-bg rounded-lg p-6" >
         <
         h3 className = "text-xl font-semibold text-accent mb-3" > Print Design < /h3> <
         p className = "text-foreground/80 text-sm leading-relaxed" > [Description placeholder
             for this design type
         ] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "custom-bg rounded-lg p-6" >
         <
         h3 className = "text-xl font-semibold text-accent mb-3" > Digital Design < /h3> <
         p className = "text-foreground/80 text-sm leading-relaxed" > [Description placeholder
             for this design type
         ] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "custom-bg rounded-lg p-6" >
         <
         h3 className = "text-xl font-semibold text-accent mb-3" > Packaging < /h3> <
         p className = "text-foreground/80 text-sm leading-relaxed" > [Description placeholder
             for this design type
         ] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "custom-bg rounded-lg p-6" >
         <
         h3 className = "text-xl font-semibold text-accent mb-3" > Illustration < /h3> <
         p className = "text-foreground/80 text-sm leading-relaxed" > [Description placeholder
             for this design type
         ] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "custom-bg rounded-lg p-6" >
         <
         h3 className = "text-xl font-semibold text-accent mb-3" > Typography < /h3> <
         p className = "text-foreground/80 text-sm leading-relaxed" > [Description placeholder
             for this design type
         ] <
-        /p> <
-        /div> <
-        /div> <
-        /section>
+        /p> < /
+        div > <
+        /div> < /
+        section >
 
         { /* Why Work With Me Section */ } <
         section className = "mb-24 lg:mb-32" >
@@ -242,28 +242,28 @@ export default function ProjectsPage() {
         <
         h3 className = "text-xl font-semibold text-accent mb-4" > Strategic Thinking < /h3> <
         p className = "text-foreground leading-relaxed" > [Description placeholder - What makes your approach unique ? ] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "custom-bg rounded-lg p-8" >
         <
         h3 className = "text-xl font-semibold text-accent mb-4" > Problem Solving < /h3> <
         p className = "text-foreground leading-relaxed" > [Description placeholder - How do you solve complex design challenges ? ] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "custom-bg rounded-lg p-8" >
         <
         h3 className = "text-xl font-semibold text-accent mb-4" > Value Creation < /h3> <
         p className = "text-foreground leading-relaxed" > [Description placeholder - What value do you bring to projects ? ] <
-        /p> <
-        /div> <
+        /p> < /
+        div > <
         div className = "custom-bg rounded-lg p-8" >
         <
         h3 className = "text-xl font-semibold text-accent mb-4" > Collaboration < /h3> <
         p className = "text-foreground leading-relaxed" > [Description placeholder - How do you work with clients ? ] <
-        /p> <
-        /div> <
-        /div> <
-        /div> <
+        /p> < /
+        div > <
+        /div> < /
+        div > <
         /section>
 
         { /* Soft Call To Action Section */ } <
@@ -281,13 +281,13 @@ export default function ProjectsPage() {
         a href = "/contact"
         className = "inline-block px-8 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors" >
         Get In Touch <
-        /a> <
-        /div> <
-        /div> <
-        /section>
+        /a> < /
+        div > <
+        /div> < /
+        section >
 
         <
-        /div> <
-        />
+        /div> < /
+        >
     );
 }
