@@ -7,6 +7,11 @@ import {
   Phone,
   Twitter,
   User,
+  PenTool,
+  Camera,
+  Server,
+  GraduationCap,
+  Info,
 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -16,6 +21,16 @@ import { motion } from "framer-motion";
 
 const getIcon = (icon) => {
   switch (icon) {
+    case "penTool":
+      return <PenTool className="w-full h-auto" strokeWidth={1.5} />;
+    case "camera":
+      return <Camera className="w-full h-auto" strokeWidth={1.5} />;
+    case "server":
+      return <Server className="w-full h-auto" strokeWidth={1.5} />;
+    case "graduationCap":
+      return <GraduationCap className="w-full h-auto" strokeWidth={1.5} />;
+    case "info":
+      return <Info className="w-full h-auto" strokeWidth={1.5} />;
     case "home":
       return <Home className="w-full h-auto" strokeWidth={1.5} />;
     case "about":

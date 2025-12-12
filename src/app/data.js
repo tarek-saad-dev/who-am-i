@@ -90,34 +90,11 @@ export const projectsData = [
 ];
 
 export const BtnList = [
-  { label: "Home", link: "/", icon: "home", newTab: false },
-  { label: "About", link: "/about", icon: "about", newTab: false },
-  { label: "Projects", link: "/projects", icon: "projects", newTab: false },
-  { label: "Contact", link: "/contact", icon: "contact", newTab: false },
-  {
-    label: "Github",
-    link: "https://www.github.com/codebucks27",
-    icon: "github",
-    newTab: true,
-  },
-  {
-    label: "LinkedIn",
-    link: "https://www.linkedin.com/in/codebucks",
-    icon: "linkedin",
-    newTab: true,
-  },
-  {
-    label: "X",
-    link: "https://www.x.com/code_bucks",
-    icon: "twitter",
-    newTab: true,
-  },
-  {
-    label: "Resume",
-    link: "/resume.pdf",
-    icon: "resume",
-    newTab: true,
-  },
+  { label: "Graphic Design", link: "/projects", icon: "penTool", newTab: false },
+  { label: "Video Editing", link: "/video-projects", icon: "camera", newTab: false },
+  { label: "Programming / Backend", link: "/programming-projects", icon: "server", newTab: false },
+  { label: "Instructor", link: "/instructor", icon: "graduationCap", newTab: false },
+  { label: "About", link: "/about", icon: "info", newTab: false },
 ];
 
 
