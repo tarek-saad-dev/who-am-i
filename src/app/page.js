@@ -1,7 +1,6 @@
 import Image from "next/image";
 import bg from "../../public/background/bg4.png";
 import RenderModel from "@/components/RenderModel";
-// import Wizard from "@/components/models/Wizard";
 import Navigation from "@/components/navigation";
 
 import dynamic from "next/dynamic";
@@ -29,8 +28,8 @@ export default function Home() {
         <
         Wizard / >
         <
-        /RenderModel> < /
-        div > <
+        /RenderModel> <
+        /div> <
         /main>
     );
 }
