@@ -36,14 +36,20 @@ export default function ProjectsPage() {
         div className = "relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24" >
 
         { /* Hero Section */ } <
-        section className = "min-h-screen flex flex-col items-center justify-center text-center mb-24 lg:mb-32" >
+        section className = "min-h-screen flex flex-col items-center justify-center text-center mb-24 lg:mb-32 relative" >
         <
-        h1 className = "font-bold text-5xl xs:text-6xl sm:text-7xl lg:text-8xl text-accent mb-6" >
-        Graphic Design Projects <
+        div className = "max-w-4xl mx-auto px-4 sm:px-6" >
+        <
+        h1 className = "font-bold text-4xl xs:text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground mb-8 leading-tight tracking-tight" >
+        Design is about problem solving, < br className = "hidden sm:block" / > not decoration. <
         /h1> <
-        p className = "font-light text-foreground text-lg sm:text-xl max-w-2xl mx-auto" >
-        Where creativity meets strategy, and design solves real problems <
+        p className = "font-light text-foreground/80 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed" >
+        Every project starts with understanding the challenge, not the aesthetic. <
         /p> <
+        /div>
+
+        { /* Clean Visual Space - Subtle decorative element */ } <
+        div className = "absolute bottom-20 left-1/2 -translate-x-1/2 w-px h-32 bg-gradient-to-b from-accent/30 to-transparent hidden lg:block" > < /div> <
         /section>
 
         { /* How I Think (Process) Section */ } <
