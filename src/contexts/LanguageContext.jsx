@@ -6,16 +6,22 @@ const LanguageContext = createContext();
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState("en");
   const [direction, setDirection] = useState("ltr");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Load saved language from localStorage
-    const savedLanguage = localStorage.getItem("language") || "en";
-    setLanguage(savedLanguage);
-    setDirection(savedLanguage === "ar" ? "rtl" : "ltr");
+    // Mark as mounted to prevent hydration mismatch
+    setMounted(true);
     
-    // Update document direction and lang attribute
-    document.documentElement.dir = savedLanguage === "ar" ? "rtl" : "ltr";
-    document.documentElement.lang = savedLanguage;
+    // Load saved language from localStorage (only on client)
+    if (typeof window !== "undefined") {
+      const savedLanguage = localStorage.getItem("language") || "en";
+      setLanguage(savedLanguage);
+      setDirection(savedLanguage === "ar" ? "rtl" : "ltr");
+      
+      // Update document direction and lang attribute
+      document.documentElement.dir = savedLanguage === "ar" ? "rtl" : "ltr";
+      document.documentElement.lang = savedLanguage;
+    }
   }, []);
 
   const changeLanguage = (lang) => {

@@ -32,10 +32,35 @@ export const projectsContent = {
             title: "Projects",
             items: [{
                     title: "Brand Identity Redesign",
+                    category: "Brand Identity",
+                    // Storytelling Structure
+                    coverImage: null,
+                    problem: "A local business struggled with inconsistent branding across all touchpoints. Customers couldn't recognize them, and their message was unclear. They needed a cohesive identity that would help them stand out in a crowded market.",
+                    problemTitle: "Inconsistent Branding Was Hurting Business",
+                    problemPoints: [
+                        "No recognizable visual identity",
+                        "Confusing customer experience",
+                        "Lost opportunities in a competitive market"
+                    ],
+                    solution: "I created a complete brand identity system including a new logo, color palette, typography, and brand guidelines. The design uses bold, confident colors that reflect the company's innovative spirit, paired with clean, modern typography that ensures readability across all applications.",
+                    solutionTitle: "A Cohesive Visual System That Tells Their Story",
+                    solutionHighlights: [
+                        "Complete brand guidelines",
+                        "Flexible color system",
+                        "Memorable logo design"
+                    ],
+                    solutionImage: null,
+                    impact: "Within 3 months, brand recognition increased by 40%. The new identity helped them secure 5 major partnerships and increased customer trust. The cohesive system made it easy for their team to maintain consistency across all materials.",
+                    resultTitle: "Measurable Business Impact",
+                    metrics: [
+                        { value: "+40%", label: "Brand Recognition" },
+                        { value: "5", label: "New Partnerships" },
+                        { value: "100%", label: "Team Adoption" }
+                    ],
+                    resultImage: null,
+                    // Legacy fields for compatibility
                     challenge: "A local business struggled with inconsistent branding across all touchpoints. Customers couldn't recognize them, and their message was unclear. They needed a cohesive identity that would help them stand out in a crowded market.",
                     approach: "I started by understanding their core values and target audience. Through workshops and research, I identified what made them unique. Then I developed a visual system that reflected their personality while remaining professional and memorable.",
-                    solution: "I created a complete brand identity system including a new logo, color palette, typography, and brand guidelines. The design uses bold, confident colors that reflect the company's innovative spirit, paired with clean, modern typography that ensures readability across all applications.",
-                    impact: "Within 3 months, brand recognition increased by 40%. The new identity helped them secure 5 major partnerships and increased customer trust. The cohesive system made it easy for their team to maintain consistency across all materials.",
                     image: null,
                     imageAlt: "Brand Identity Redesign",
                 },

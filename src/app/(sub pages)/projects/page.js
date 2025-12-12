@@ -16,7 +16,10 @@ const Staff = dynamic(() =>
 
 export default function ProjectsPage() {
     const { language, direction } = useLanguage();
-    const content = projectsContent[language] || projectsContent.en;
+    // Ensure we always have a valid language (default to "en" for SSR safety)
+    const safeLanguage = language || "en";
+    const safeDirection = direction || "ltr";
+    const content = projectsContent[safeLanguage] || projectsContent.en;
     const { hero, process, projects, designTypes, whyWorkWithMe, cta } = content;
 
     return ( <
@@ -70,7 +73,7 @@ export default function ProjectsPage() {
         div className = {
             clsx(
                 "flex items-start gap-6",
-                direction === "rtl" ? "flex-row-reverse" : ""
+                safeDirection === "rtl" ? "flex-row-reverse" : ""
             )
         } >
         <
@@ -90,7 +93,7 @@ export default function ProjectsPage() {
         ul className = {
             clsx(
                 "flex flex-wrap gap-3",
-                direction === "rtl" ? "flex-row-reverse" : ""
+                safeDirection === "rtl" ? "flex-row-reverse" : ""
             )
         } > {
             process.step1.details.map((detail, index) => ( <
@@ -112,7 +115,7 @@ export default function ProjectsPage() {
         div className = {
             clsx(
                 "flex items-start gap-6",
-                direction === "rtl" ? "flex-row-reverse" : ""
+                safeDirection === "rtl" ? "flex-row-reverse" : ""
             )
         } >
         <
@@ -132,7 +135,7 @@ export default function ProjectsPage() {
         ul className = {
             clsx(
                 "flex flex-wrap gap-3",
-                direction === "rtl" ? "flex-row-reverse" : ""
+                safeDirection === "rtl" ? "flex-row-reverse" : ""
             )
         } > {
             process.step2.details.map((detail, index) => ( <
@@ -154,7 +157,7 @@ export default function ProjectsPage() {
         div className = {
             clsx(
                 "flex items-start gap-6",
-                direction === "rtl" ? "flex-row-reverse" : ""
+                safeDirection === "rtl" ? "flex-row-reverse" : ""
             )
         } >
         <
@@ -174,7 +177,7 @@ export default function ProjectsPage() {
         ul className = {
             clsx(
                 "flex flex-wrap gap-3",
-                direction === "rtl" ? "flex-row-reverse" : ""
+                safeDirection === "rtl" ? "flex-row-reverse" : ""
             )
         } > {
             process.step3.details.map((detail, index) => ( <
