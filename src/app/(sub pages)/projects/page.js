@@ -47,12 +47,10 @@ export default function ProjectsPage() {
         <
         div className = "max-w-4xl mx-auto px-4 sm:px-6" >
         <
-        h1 className = "font-bold text-4xl xs:text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground mb-8 leading-tight tracking-tight" >
-        Design is about problem solving, <
-        br className = "hidden sm:block" / > not decoration. <
+        h1 className = "font-bold text-4xl xs:text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground mb-8 leading-tight tracking-tight" > { hero.headline.part1 } <
+        br className = "hidden sm:block" / > { hero.headline.part2 } <
         /h1> <
-        p className = "font-light text-foreground/80 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed" >
-        Every project starts with understanding the challenge, not the aesthetic. <
+        p className = "font-light text-foreground/80 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed" > { hero.subheadline } <
         /p> < /
         div >
 
@@ -217,8 +215,7 @@ export default function ProjectsPage() {
         { /* Design Types Section */ } <
         section className = "mb-24 lg:mb-32" >
         <
-        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-12 text-center" >
-        Design Types <
+        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-12 text-center" > { designTypes.title } <
         /h2> <
         div className = "max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" >
         <
@@ -288,8 +285,7 @@ export default function ProjectsPage() {
         { /* Why Work With Me Section */ } <
         section className = "mb-24 lg:mb-32" >
         <
-        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-12 text-center" >
-        Why Work With Me <
+        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-12 text-center" > { whyWorkWithMe.title } <
         /h2> <
         div className = "max-w-4xl mx-auto" >
         <
@@ -342,16 +338,12 @@ export default function ProjectsPage() {
         <
         div className = "custom-bg rounded-lg p-12 lg:p-16" >
         <
-        h2 className = "text-2xl sm:text-3xl lg:text-4xl font-bold text-accent mb-6" >
-        Let & apos; s Create Something Meaningful Together <
+        h2 className = "text-2xl sm:text-3xl lg:text-4xl font-bold text-accent mb-6" > { cta.title } <
         /h2> <
-        p className = "text-foreground text-lg mb-8 leading-relaxed" > [CTA description placeholder - Invite conversation about
-            potential projects
-        ] <
+        p className = "text-foreground text-lg mb-8 leading-relaxed" > { cta.description } <
         /p> <
         a href = "/contact"
-        className = "inline-block px-8 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors" >
-        Get In Touch <
+        className = "inline-block px-8 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors" > { cta.button } <
         /a> < /
         div > <
         /div> < /

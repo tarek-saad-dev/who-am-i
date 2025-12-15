@@ -10,6 +10,14 @@
     --accent: 254 254 91;
     /* hex value of rgb(254,254,91) color is  #FEFE5B  */
   }
+
+  /* Apply Cairo font for Arabic language */
+  html[dir="rtl"],
+  html[lang="ar"],
+  [dir="rtl"] *,
+  [lang="ar"] * {
+    font-family: var(--font-cairo), sans-serif !important;
+  }
 }
 
 @layer utilities {

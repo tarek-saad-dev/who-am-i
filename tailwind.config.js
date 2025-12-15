@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        inter: ['var(--font-inter)']
+        inter: ['var(--font-inter)'],
+        'cairo': ['var(--font-cairo)', 'sans-serif'],
       },
       colors:{
         background: 'rgb(var(--background))',

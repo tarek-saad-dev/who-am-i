@@ -21,6 +21,15 @@ export function LanguageProvider({ children }) {
       // Update document direction and lang attribute
       document.documentElement.dir = savedLanguage === "ar" ? "rtl" : "ltr";
       document.documentElement.lang = savedLanguage;
+      
+      // Update font class based on language
+      if (savedLanguage === "ar") {
+        document.body.classList.add("font-cairo");
+        document.body.classList.remove("font-inter");
+      } else {
+        document.body.classList.add("font-inter");
+        document.body.classList.remove("font-cairo");
+      }
     }
   }, []);
 
@@ -33,6 +42,15 @@ export function LanguageProvider({ children }) {
     // Update document direction and lang attribute
     document.documentElement.dir = dir;
     document.documentElement.lang = lang;
+    
+      // Update font class based on language
+      if (lang === "ar") {
+        document.body.classList.add("font-cairo");
+        document.body.classList.remove("font-inter");
+      } else {
+        document.body.classList.add("font-inter");
+        document.body.classList.remove("font-cairo");
+      }
   };
 
   return (

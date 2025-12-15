@@ -69,7 +69,7 @@ const Model = React.memo(function Model(props) {
       // Smooth mouse following - calculate target rotation
       const baseYRotation = 0.5; // Base Y-axis rotation (facing slightly right)
       targetRotation.current.y = baseYRotation + mouse.x * 0.3; // Horizontal rotation (left/right) + base offset
-      targetRotation.current.x = mouse.y * 0.2 + 0.25; // Vertical rotation (up/down) + base tilt
+      targetRotation.current.x = mouse.y * 0.02 + 0.25; // Vertical rotation (up/down) + base tilt
 
       // Smooth interpolation using lerp for natural movement
       const lerpFactor = 0.05;
@@ -92,7 +92,7 @@ const Model = React.memo(function Model(props) {
       dispose={null}
       ref={modelRef}
       position={[0, -1.5, 0]}
-      scale={[1.5, 1.5, 1.5]}
+      scale={[1.7, 1.7, 1.7]}
       rotation={[0.25, -0.8, 0]}
     >
       <primitive object={scene} />
