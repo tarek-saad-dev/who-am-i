@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import bg from "../../../../public/background/bg4.png";
+import bg from "../../../../public/background/bg4_1.jpg";
 import RenderModel from "@/components/RenderModel";
 import ProjectsPageTransition from "@/components/transitions/ProjectsPageTransition";
 import dynamic from "next/dynamic";
@@ -211,8 +211,8 @@ export default function ProjectsPage() {
                 />
             ))
         } <
-        /div> <
-        /section>
+        /div> < /
+        section >
 
         { /* Design Types Section */ } <
         section className = "mb-24 lg:mb-32" >

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import bg from "../../public/background/bg4.png";
+import bg from "../../public/background/bg4_1.jpg";
 import RenderModel from "@/components/RenderModel";
 import Navigation from "@/components/navigation";
 
 import dynamic from "next/dynamic";
-const Wizard = dynamic(() =>
-    import ("@/components/models/Wizard"), {
+const Model = dynamic(() =>
+    import ("@/components/models/Model"), {
         ssr: false,
     });
 
@@ -26,7 +26,7 @@ export default function Home() {
         <
         RenderModel >
         <
-        Wizard / >
+        Model / >
         <
         /RenderModel> <
         /div> <
