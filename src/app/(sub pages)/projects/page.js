@@ -47,10 +47,10 @@ export default function ProjectsPage() {
         <
         div className = "max-w-4xl mx-auto px-4 sm:px-6" >
         <
-        h1 className = "font-bold text-4xl xs:text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground mb-8 leading-tight tracking-tight" > { hero.headline.part1 } <
+        h1 className = "font-bold text-4xl xs:text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground mb-8 leading-[2] tracking-tight px-4 py-2 rounded-lg bg-background/80 backdrop-blur-sm inline-block" > { hero.headline.part1 } <
         br className = "hidden sm:block" / > { hero.headline.part2 } <
         /h1> <
-        p className = "font-light text-foreground/80 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed" > { hero.subheadline } <
+        p className = "font-light text-foreground/90 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed px-4 py-2 rounded-lg bg-background/70 backdrop-blur-sm inline-block" > { hero.subheadline } <
         /p> < /
         div >
 
@@ -61,7 +61,7 @@ export default function ProjectsPage() {
         { /* How I Work (Process) Section */ } <
         section className = "mb-24 lg:mb-32" >
         <
-        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-16 text-center" > { process.title } <
+        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-16 text-center px-6 py-3 rounded-lg bg-background/80 backdrop-blur-sm inline-block" > { process.title } <
         /h2>
 
         <
@@ -84,9 +84,9 @@ export default function ProjectsPage() {
         /div> <
         div className = "flex-1" >
         <
-        h3 className = "text-2xl sm:text-3xl font-bold text-accent mb-4" > { process.step1.title } <
+        h3 className = "text-2xl sm:text-3xl font-bold text-accent mb-4 px-3 py-2 rounded-lg bg-background/70 backdrop-blur-sm inline-block" > { process.step1.title } <
         /h3> <
-        p className = "text-foreground text-lg mb-4 leading-relaxed" > { process.step1.description } <
+        p className = "text-foreground text-lg mb-4 leading-relaxed px-3 py-2 rounded-lg bg-background/60 backdrop-blur-sm" > { process.step1.description } <
         /p> <
         ul className = {
             clsx(
@@ -96,7 +96,7 @@ export default function ProjectsPage() {
         } > {
             process.step1.details.map((detail, index) => ( <
                 li key = { index }
-                className = "text-foreground/70 text-sm" >
+                className = "text-foreground/90 text-sm px-3 py-1.5 rounded-lg bg-background/60 backdrop-blur-sm inline-block" >
                 <
                 span className = "text-accent" > • < /span> {detail} < /
                 li >
@@ -126,9 +126,9 @@ export default function ProjectsPage() {
         /div> <
         div className = "flex-1" >
         <
-        h3 className = "text-2xl sm:text-3xl font-bold text-accent mb-4" > { process.step2.title } <
+        h3 className = "text-2xl sm:text-3xl font-bold text-accent mb-4 px-3 py-2 rounded-lg bg-background/70 backdrop-blur-sm inline-block" > { process.step2.title } <
         /h3> <
-        p className = "text-foreground text-lg mb-4 leading-relaxed" > { process.step2.description } <
+        p className = "text-foreground text-lg mb-4 leading-relaxed px-3 py-2 rounded-lg bg-background/60 backdrop-blur-sm" > { process.step2.description } <
         /p> <
         ul className = {
             clsx(
@@ -138,7 +138,7 @@ export default function ProjectsPage() {
         } > {
             process.step2.details.map((detail, index) => ( <
                 li key = { index }
-                className = "text-foreground/70 text-sm" >
+                className = "text-foreground/90 text-sm px-3 py-1.5 rounded-lg bg-background/60 backdrop-blur-sm inline-block" >
                 <
                 span className = "text-accent" > • < /span> {detail} < /
                 li >
@@ -168,9 +168,9 @@ export default function ProjectsPage() {
         /div> <
         div className = "flex-1" >
         <
-        h3 className = "text-2xl sm:text-3xl font-bold text-accent mb-4" > { process.step3.title } <
+        h3 className = "text-2xl sm:text-3xl font-bold text-accent mb-4 px-3 py-2 rounded-lg bg-background/70 backdrop-blur-sm inline-block" > { process.step3.title } <
         /h3> <
-        p className = "text-foreground text-lg mb-4 leading-relaxed" > { process.step3.description } <
+        p className = "text-foreground text-lg mb-4 leading-relaxed px-3 py-2 rounded-lg bg-background/60 backdrop-blur-sm" > { process.step3.description } <
         /p> <
         ul className = {
             clsx(
@@ -180,7 +180,7 @@ export default function ProjectsPage() {
         } > {
             process.step3.details.map((detail, index) => ( <
                 li key = { index }
-                className = "text-foreground/70 text-sm" >
+                className = "text-foreground/90 text-sm px-3 py-1.5 rounded-lg bg-background/60 backdrop-blur-sm inline-block" >
                 <
                 span className = "text-accent" > • < /span> {detail} < /
                 li >
@@ -197,7 +197,7 @@ export default function ProjectsPage() {
         section className = "mb-24 lg:mb-32 scroll-smooth"
         id = "projects" >
         <
-        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-20 lg:mb-24 text-center" > { projects.title } <
+        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-20 lg:mb-24 text-center px-6 py-3 rounded-lg bg-background/80 backdrop-blur-sm inline-block" > { projects.title } <
         /h2>
 
         <
@@ -215,16 +215,16 @@ export default function ProjectsPage() {
         { /* Design Types Section */ } <
         section className = "mb-24 lg:mb-32" >
         <
-        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-12 text-center" > { designTypes.title } <
+        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-12 text-center px-6 py-3 rounded-lg bg-background/80 backdrop-blur-sm inline-block" > { designTypes.title } <
         /h2> <
         div className = "max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" >
         <
         div className = "custom-bg rounded-lg p-6" >
         <
-        h3 className = "text-xl font-semibold text-accent mb-3" >
+        h3 className = "text-xl font-semibold text-accent mb-3 px-2 py-1 rounded-lg bg-background/70 backdrop-blur-sm inline-block" >
         Brand Identity <
         /h3> <
-        p className = "text-foreground/80 text-sm leading-relaxed" > [Description placeholder
+        p className = "text-foreground/90 text-sm leading-relaxed px-2 py-1 rounded-lg bg-background/60 backdrop-blur-sm" > [Description placeholder
             for this design type
         ] <
         /p> < /
@@ -285,7 +285,7 @@ export default function ProjectsPage() {
         { /* Why Work With Me Section */ } <
         section className = "mb-24 lg:mb-32" >
         <
-        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-12 text-center" > { whyWorkWithMe.title } <
+        h2 className = "text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-12 text-center px-6 py-3 rounded-lg bg-background/80 backdrop-blur-sm inline-block" > { whyWorkWithMe.title } <
         /h2> <
         div className = "max-w-4xl mx-auto" >
         <
@@ -293,10 +293,10 @@ export default function ProjectsPage() {
         <
         div className = "custom-bg rounded-lg p-8" >
         <
-        h3 className = "text-xl font-semibold text-accent mb-4" >
+        h3 className = "text-xl font-semibold text-accent mb-4 px-3 py-2 rounded-lg bg-background/70 backdrop-blur-sm inline-block" >
         Strategic Thinking <
         /h3> <
-        p className = "text-foreground leading-relaxed" > [Description placeholder - What makes your approach unique ? ] <
+        p className = "text-foreground leading-relaxed px-3 py-2 rounded-lg bg-background/60 backdrop-blur-sm" > [Description placeholder - What makes your approach unique ? ] <
         /p> < /
         div > <
         div className = "custom-bg rounded-lg p-8" >
@@ -338,9 +338,9 @@ export default function ProjectsPage() {
         <
         div className = "custom-bg rounded-lg p-12 lg:p-16" >
         <
-        h2 className = "text-2xl sm:text-3xl lg:text-4xl font-bold text-accent mb-6" > { cta.title } <
+        h2 className = "text-2xl sm:text-3xl lg:text-4xl font-bold text-accent mb-6 px-4 py-2 rounded-lg bg-background/80 backdrop-blur-sm inline-block" > { cta.title } <
         /h2> <
-        p className = "text-foreground text-lg mb-8 leading-relaxed" > { cta.description } <
+        p className = "text-foreground text-lg mb-8 leading-relaxed px-4 py-2 rounded-lg bg-background/70 backdrop-blur-sm inline-block" > { cta.description } <
         /p> <
         a href = "/contact"
         className = "inline-block px-8 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors" > { cta.button } <

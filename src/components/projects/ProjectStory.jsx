@@ -71,12 +71,12 @@ const ProjectStory = ({ project, index }) => {
           )}>
             <h3 className={clsx(
               "text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-2",
-              "drop-shadow-lg"
+              "drop-shadow-lg px-4 py-2 rounded-lg bg-background/80 backdrop-blur-sm inline-block"
             )}>
               {project.title}
             </h3>
             {project.category && (
-              <p className="text-accent text-sm font-semibold uppercase tracking-wider">
+              <p className="text-accent text-sm font-semibold uppercase tracking-wider px-3 py-1 rounded-lg bg-background/70 backdrop-blur-sm inline-block mt-2">
                 {project.category}
               </p>
             )}
@@ -115,13 +115,13 @@ const ProjectStory = ({ project, index }) => {
                   <span className="w-2 h-2 rounded-full bg-red-400"></span>
                   {currentLabels.problem}
                 </p>
-                <h4 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                <h4 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 px-3 py-2 rounded-lg bg-background/70 backdrop-blur-sm inline-block">
                   {project.problemTitle || "What Needed to Be Solved"}
                 </h4>
               </div>
               
               <div className="prose prose-invert max-w-none">
-                <p className="text-foreground/90 text-lg sm:text-xl leading-relaxed mb-4">
+                <p className="text-foreground/90 text-lg sm:text-xl leading-relaxed mb-4 px-4 py-3 rounded-lg bg-background/60 backdrop-blur-sm">
                   {project.problem || project.challenge}
                 </p>
                 
@@ -129,9 +129,9 @@ const ProjectStory = ({ project, index }) => {
                 {project.problemPoints && (
                   <ul className="space-y-3 mt-6">
                     {project.problemPoints.map((point, idx) => (
-                      <li key={idx} className="flex items-start gap-3">
+                      <li key={idx} className="flex items-start gap-3 px-3 py-2 rounded-lg bg-background/60 backdrop-blur-sm">
                         <span className="text-red-400 mt-1">✗</span>
-                        <span className="text-foreground/80">{point}</span>
+                        <span className="text-foreground/90">{point}</span>
                       </li>
                     ))}
                   </ul>
@@ -181,13 +181,13 @@ const ProjectStory = ({ project, index }) => {
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
                   {currentLabels.solution}
                 </p>
-                <h4 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                <h4 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 px-3 py-2 rounded-lg bg-background/70 backdrop-blur-sm inline-block">
                   {project.solutionTitle || "How Design Solved It"}
                 </h4>
               </div>
               
               <div className="prose prose-invert max-w-none">
-                <p className="text-foreground/90 text-lg sm:text-xl leading-relaxed mb-6">
+                <p className="text-foreground/90 text-lg sm:text-xl leading-relaxed mb-6 px-4 py-3 rounded-lg bg-background/60 backdrop-blur-sm">
                   {project.solution || project.approach || project.challenge}
                 </p>
                 
@@ -260,13 +260,13 @@ const ProjectStory = ({ project, index }) => {
                   <span className="w-2 h-2 rounded-full bg-green-400"></span>
                   {currentLabels.result}
                 </p>
-                <h4 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                <h4 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 px-3 py-2 rounded-lg bg-background/70 backdrop-blur-sm inline-block">
                   {project.resultTitle || "Visual + Impact"}
                 </h4>
               </div>
               
               <div className="prose prose-invert max-w-none">
-                <p className="text-foreground/90 text-lg sm:text-xl leading-relaxed mb-6">
+                <p className="text-foreground/90 text-lg sm:text-xl leading-relaxed mb-6 px-4 py-3 rounded-lg bg-background/60 backdrop-blur-sm">
                   {project.impact || project.result || project.impact}
                 </p>
                 
