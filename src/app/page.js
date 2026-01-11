@@ -13,8 +13,8 @@ const Model = dynamic(() =>
 
 // Hero Text Content (Replaceable)
 const heroContent = {
-    kicker: "أهلا",
-    title: "أنا البـــــــــشمهندس طارق",
+    kicker: "أهــلا",
+    title: "أنا البشمــــهندس طارق",
     subtitle: "A Passion-Driven Software Engineer, Entrepreneur, and Content Creator building ideas into products"
 };
 
