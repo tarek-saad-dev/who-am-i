@@ -21,7 +21,7 @@ export default function LanguageSwitcher() {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       className={clsx(
-        "fixed top-4 left-2.5 xs:left-4 z-50",
+        "fixed top-16 xs:top-20 right-2.5 xs:right-4 z-50",
         "custom-bg rounded-full p-2.5 xs:p-3",
         "hover:shadow-glass-sm transition-all",
         "flex items-center justify-center gap-1.5 xs:gap-2",
