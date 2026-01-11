@@ -80,12 +80,10 @@ export default function Home() {
 
             {/* Hero Character Layer - Above Text */}
             <div className="hero__characterLayer absolute inset-0 z-[3] pointer-events-none">
-                <div className="w-full h-screen flex items-center justify-center translate-y-[40px]">
-                <div className="translate-y-[40px]">
+                <div className="w-full h-screen flex items-center justify-center">
                     <RenderModel>
                         <Model />
                     </RenderModel>
-                    </div>
                 </div>
             </div>
         </main>
