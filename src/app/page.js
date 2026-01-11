@@ -14,8 +14,8 @@ const Model = dynamic(() =>
 // Hero Text Content (Replaceable)
 const heroContent = {
     kicker: "أهلا",
-    title: "أنا الدكتور وليد",
-    subtitle: "A Doctor turned Entrepreneur, Youtuber, Author and Content creator with over 4 Million Followers"
+    title: "أنا البـــــــــشمهندس طارق",
+    subtitle: "A Passion-Driven Software Engineer, Entrepreneur, and Content Creator building ideas into products"
 };
 
 export default function Home() {
