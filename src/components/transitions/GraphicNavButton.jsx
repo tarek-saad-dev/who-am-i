@@ -26,12 +26,13 @@ const GraphicNavButton = ({
   const size = useScreenSize();
   const isMobile = size < 768;
 
-  // Prefetch on hover
+  const isExternalLink = newTab && link && /^https?:\/\//i.test(link);
+
+  // Prefetch on hover (only for internal links)
   useEffect(() => {
-    if (isHovering && !isPrefetching) {
+    if (isHovering && !isPrefetching && !isExternalLink) {
       prefetchTimeoutRef.current = setTimeout(() => {
         setIsPrefetching(true);
-        // Prefetch the route
         router.prefetch(link);
       }, 300);
     }
@@ -41,23 +42,20 @@ const GraphicNavButton = ({
         clearTimeout(prefetchTimeoutRef.current);
       }
     };
-  }, [isHovering, link, router, isPrefetching]);
+  }, [isHovering, link, router, isPrefetching, isExternalLink]);
 
   const handleClick = (e) => {
-    if (newTab) return; // Let default behavior handle external links
+    if (isExternalLink) return;
 
     e.preventDefault();
     if (isTransitioning) return;
 
-    // Mark that we're transitioning (for the landing page to detect)
     if (typeof window !== "undefined") {
       sessionStorage.setItem("wasTransitioning", "true");
     }
 
-    // Start transition
     startTransition(link, isMobile);
 
-    // Navigate when transition reaches ~85% (after ~1 second for desktop, ~0.7s for mobile)
     const delay = isMobile ? 700 : 1000;
     navigationTimeoutRef.current = setTimeout(() => {
       router.push(link);
@@ -72,6 +70,8 @@ const GraphicNavButton = ({
     };
   }, []);
 
+  const MotionElement = isExternalLink ? motion.a : motion.button;
+
   return (
     <ResponsiveComponent>
       {({ size }) => {
@@ -80,7 +80,7 @@ const GraphicNavButton = ({
             className="absolute cursor-pointer z-50"
             style={{ transform: `translate(${x}, ${y})` }}
           >
-            <motion.button
+            <MotionElement
               variants={{
                 hidden: { scale: 0 },
                 show: { scale: 1 },
@@ -88,7 +88,10 @@ const GraphicNavButton = ({
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               onClick={handleClick}
-              disabled={isTransitioning}
+              href={isExternalLink ? link : undefined}
+              target={isExternalLink ? "_blank" : undefined}
+              rel={isExternalLink ? "noopener noreferrer" : undefined}
+              disabled={!isExternalLink && isTransitioning}
               className="text-foreground rounded-full flex items-center justify-center custom-bg disabled:opacity-50 disabled:cursor-not-allowed"
               aria-label={label}
               name={label}
@@ -102,11 +105,11 @@ const GraphicNavButton = ({
                   {label}
                 </span>
               </span>
-            </motion.button>
+            </MotionElement>
           </div>
         ) : (
           <div className="w-fit cursor-pointer z-50">
-            <motion.button
+            <MotionElement
               variants={{
                 hidden: { scale: 0 },
                 show: { scale: 1 },
@@ -114,7 +117,10 @@ const GraphicNavButton = ({
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               onClick={handleClick}
-              disabled={isTransitioning}
+              href={isExternalLink ? link : undefined}
+              target={isExternalLink ? "_blank" : undefined}
+              rel={isExternalLink ? "noopener noreferrer" : undefined}
+              disabled={!isExternalLink && isTransitioning}
               className="text-foreground rounded-full flex items-center justify-center custom-bg disabled:opacity-50 disabled:cursor-not-allowed"
               aria-label={label}
               name={label}
@@ -127,13 +133,13 @@ const GraphicNavButton = ({
                 <span
                   className={clsx(
                     "absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 bg-background text-foreground text-sm rounded-md shadow-lg whitespace-nowrap",
-                    labelDirection === "left" ? "right-full left-auto" : ""
+                    labelDirection === "left" ? "right-full left-auto" : "",
                   )}
                 >
                   {label}
                 </span>
               </span>
-            </motion.button>
+            </MotionElement>
           </div>
         );
       }}
@@ -142,4 +148,3 @@ const GraphicNavButton = ({
 };
 
 export default GraphicNavButton;
-
