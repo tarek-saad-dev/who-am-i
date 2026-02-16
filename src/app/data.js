@@ -91,13 +91,13 @@ export const projectsData = [{
 export const BtnList = [{
         label: "Graphic Design",
         icon: "penTool",
-        link: "https://portfolio-graphic-design-umber.vercel.app/",
+        link: "https://portofolio-graphic-frontend.vercel.app/",
         newTab: true,
     },
     {
         label: "Video Editor",
         icon: "camera",
-        link: "https://portfolio-video-editing-pi.vercel.app/",
+        link: "https://portfolio-video-editing-wheat.vercel.app/",
         newTab: true,
     },
     {
@@ -107,9 +107,9 @@ export const BtnList = [{
         newTab: true,
     },
     {
-        label: "Interactor",
+        label: "Instructor",
         icon: "graduationCap",
-        link: "#",
-        disabled: true,
+        link: "https://lms-codengo-v2.vercel.app/",
+        newTab: true,
     },
 ];
